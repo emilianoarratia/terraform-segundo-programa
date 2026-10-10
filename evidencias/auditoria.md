@@ -33,7 +33,7 @@ Parametrizar infraestructura con variables y locals, declarar proveedor y versio
 
 ## Azure
 
-Se requiere autenticación real con al222310542@utvtol.edu.mx, selección de la suscripción y comprobación de Microsoft.Network. La suscripción del profesor no se reutiliza.
+Se requiere autenticación real con la cuenta universitaria autorizada, selección de la suscripción y comprobación de Microsoft.Network. La suscripción del profesor no se reutiliza.
 
 ## Terraform
 
@@ -41,18 +41,18 @@ La configuración del alumno reproduce la parte de Azure; requiere init, validat
 
 ## Git
 
-Se prepara un repositorio independiente para emilianoarratia. El repositorio del profesor no se modifica. Falta crear el remoto propio.
+Se prepara un repositorio independiente para emilianoarratia. El repositorio del profesor no se modifica. El remoto final es https://github.com/emilianoarratia/terraform-segundo-programa, rama main.
 
 ## Evidencias y documento
 
-Se conservan registros originales de herramientas, init y error de validate. Faltan capturas reales de la ejecución del alumno, contexto Azure, Microsoft.Network, plan, apply, outputs, recursos e historial remoto. El Word final tendrá las once secciones solicitadas, sin portada independiente ni pie de página.
+Se conservan los registros iniciales y los extractos finales de la ejecución del alumno. La cuenta, Microsoft.Network, el plan, apply, outputs y la red se comprobaron mediante las salidas compartidas; el historial remoto se verificó en GitHub. Faltan adjuntar las capturas reales para el reporte. El Word final tendrá las once secciones solicitadas, sin portada independiente ni pie de página.
 
 ## Plan y estado
 
 1. Auditar fuente y herramientas: completado.
-2. Preparar Terraform y Git local: completado; init y fmt correctos, validate bloqueado.
-3. Verificar Azure y desplegar: pendiente de autenticación y validación en entorno compatible.
-4. Publicar repositorio propio: pendiente de creación del remoto.
+2. Preparar Terraform y Git local: completado; validación final correcta en Windows.
+3. Verificar Azure y desplegar: completado en Windows; Microsoft.Network Registered, dos recursos creados, red Succeeded y plan posterior sin cambios.
+4. Publicar repositorio propio: completado; push de main verificado en GitHub.
 5. Crear Word definitivo: pendiente de resultados y capturas reales.
 
 ## Incidencia de validación
@@ -60,4 +60,8 @@ Se conservan registros originales de herramientas, init y error de validate. Fal
 El proveedor falla antes de cargar su esquema: listen unix /tmp/plugin...: socket: operation not permitted.
 La arquitectura y permisos del binario son correctos según el diagnóstico de Terraform.
 No es un error HCL demostrado; tampoco permite afirmar que HCL validó correctamente.
-Acción siguiente: ejecutar validate en Windows o Azure Cloud Shell, conservando la salida real.
+Resolución: se ejecutó validate en Windows y se obtuvo Success! The configuration is valid. La incidencia del entorno inicial se conserva como diagnóstico histórico.
+
+## Cierre técnico
+
+El despliegue y la publicación finalizaron correctamente según las salidas aportadas por el alumno y la inspección del remoto. Consultar resultados-windows.md para los extractos finales. El único entregable pendiente es el Word con las capturas reales y la confirmación del nombre del alumno.
