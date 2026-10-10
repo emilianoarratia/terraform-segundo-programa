@@ -1,0 +1,2 @@
+terraform fmt: ejecutado, salida vacía, código 0.
+terraform fmt -check -diff: ejecutado, salida vacía, código 0.

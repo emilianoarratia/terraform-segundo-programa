@@ -1,0 +1,14 @@
+Terraform v1.13.4
+on linux_amd64
+
+Your version of Terraform is out of date! The latest version
+is 1.16.5. You can update by downloading from https://developer.hashicorp.com/terraform/install
+
+{
+  "azure-cli": "2.91.0",
+  "azure-cli-core": "2.91.0",
+  "azure-cli-telemetry": "1.1.0",
+  "extensions": {}
+}
+
+git version 2.51.1

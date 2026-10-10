@@ -1,0 +1,3 @@
+Comando ejecutado: az account show --query {usuario:user.name,suscripcion:name,id:id} -o json
+Resultado: ERROR: Please run az login to setup account.
+No se obtuvo una suscripción real.
